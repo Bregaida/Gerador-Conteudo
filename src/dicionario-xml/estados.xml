@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-2.5.xsd
+		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+		http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+	<bean id="customEditorConfigurer" class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+		<property name="customEditors">
+			<map>
+				<entry key="java.util.Date">
+					<bean class="org.springframework.beans.propertyeditors.CustomDateEditor">
+						<constructor-arg index="0">
+							<bean class="java.text.SimpleDateFormat">
+								<constructor-arg>
+									<value>yyyy-MM-dd</value>
+								</constructor-arg>
+							</bean>
+						</constructor-arg>
+
+						<constructor-arg index="1">
+							<value>true</value>
+						</constructor-arg>
+					</bean>
+				</entry>
+			</map>
+		</property>
+	</bean> 
+  <bean id="estadoeAC" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="ACRE"/>
+    <property name="pk" value="AC"/>
+  </bean>
+  <bean id="estadoeAL" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="ALAGOAS"/>
+    <property name="pk" value="AL"/>
+  </bean>
+  <bean id="estadoeAP" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="AMAPA"/>
+    <property name="pk" value="AP"/>
+  </bean>
+  <bean id="estadoeAM" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="AMAZONAS"/>
+    <property name="pk" value="AM"/>
+  </bean>
+  <bean id="estadoeBA" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="BAHIA"/>
+    <property name="pk" value="BA"/>
+  </bean>
+  <bean id="estadoeCE" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="CEARA"/>
+    <property name="pk" value="CE"/>
+  </bean>
+  <bean id="estadoeDF" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="DISTR. FEDERAL"/>
+    <property name="pk" value="DF"/>
+  </bean>
+  <bean id="estadoeES" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="ESPIRITO SANTO"/>
+    <property name="pk" value="ES"/>
+  </bean>
+  <bean id="estadoeGO" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="GOIAS"/>
+    <property name="pk" value="GO"/>
+  </bean>
+  <bean id="estadoeMA" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="MARANHAO"/>
+    <property name="pk" value="MA"/>
+  </bean>
+  <bean id="estadoeMT" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="MATO GROSSO"/>
+    <property name="pk" value="MT"/>
+  </bean>
+  <bean id="estadoeMS" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="MATO GROSSO SUL"/>
+    <property name="pk" value="MS"/>
+  </bean>
+  <bean id="estadoeMG" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="MINAS GERAIS"/>
+    <property name="pk" value="MG"/>
+  </bean>
+  <bean id="estadoePA" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="PARA"/>
+    <property name="pk" value="PA"/>
+  </bean>
+  <bean id="estadoePB" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="PARAIBA"/>
+    <property name="pk" value="PB"/>
+  </bean>
+  <bean id="estadoePR" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="PARANA"/>
+    <property name="pk" value="PR"/>
+  </bean>
+  <bean id="estadoePE" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="PERNAMBUCO"/>
+    <property name="pk" value="PE"/>
+  </bean>
+  <bean id="estadoePI" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="PIAUI"/>
+    <property name="pk" value="PI"/>
+  </bean>
+  <bean id="estadoeRN" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="R. GDE DO NORTE"/>
+    <property name="pk" value="RN"/>
+  </bean>
+  <bean id="estadoeRS" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="R. GDE DO SUL"/>
+    <property name="pk" value="RS"/>
+  </bean>
+  <bean id="estadoeRJ" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="RIO DE JANEIRO"/>
+    <property name="pk" value="RJ"/>
+  </bean>
+  <bean id="estadoeRO" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="RONDONIA"/>
+    <property name="pk" value="RO"/>
+  </bean>
+  <bean id="estadoeRR" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="RORAIMA"/>
+    <property name="pk" value="RR"/>
+  </bean>
+  <bean id="estadoeSC" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="SANTA CATARINA"/>
+    <property name="pk" value="SC"/>
+  </bean>
+  <bean id="estadoeSP" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="SAO PAULO"/>
+    <property name="pk" value="SP"/>
+  </bean>
+  <bean id="estadoeSE" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="SERGIPE"/>
+    <property name="pk" value="SE"/>
+  </bean>
+  <bean id="estadoeTO" class="br.com.meuProjeto.entity.clazz.EstadoE">
+    <property name="nome" value="TOCANTINS"/>
+    <property name="pk" value="TO"/>
+  </bean>
+</beans>

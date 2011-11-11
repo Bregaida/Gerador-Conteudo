@@ -1,0 +1,30 @@
+package enumerador.mapeamento.entidade;
+
+import enumerador.EnumTipoInfoAtributo;
+
+
+public enum ENUM_NOME implements EnumEntidadeMptI
+{
+	;
+	/* FIM DAS DECLARACOES */
+	
+	private String nomeAtributo;
+	private EnumTipoInfoAtributo[] tipoAtributoMapeado;
+	
+	private ENUM_NOME(String nomeAtributo, EnumTipoInfoAtributo[] tipoAtributoMapeado)
+	{
+		this.nomeAtributo = nomeAtributo;
+		this.tipoAtributoMapeado = tipoAtributoMapeado;
+	}
+
+	public String getNomeAtributo()
+	{
+		return nomeAtributo;
+	}
+
+	public EnumTipoInfoAtributo[] getTipoAtributoMapeado()
+	{
+		return tipoAtributoMapeado;
+	}
+
+}

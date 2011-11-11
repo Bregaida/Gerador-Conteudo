@@ -1,0 +1,21 @@
+Library-SymbolicName: org.springframework.spring
+Library-Version: 3.1.0.M2
+Library-Name: Spring Framework
+Import-Bundle: 
+ org.springframework.aop;version="[3.1.0.M2, 3.1.0.M2]",
+ org.springframework.asm;version="[3.1.0.M2, 3.1.0.M2]",
+ org.springframework.aspects;version="[3.1.0.M2, 3.1.0.M2]",
+ org.springframework.beans;version="[3.1.0.M2, 3.1.0.M2]",
+ org.springframework.context;version="[3.1.0.M2, 3.1.0.M2]",
+ org.springframework.context.support;version="[3.1.0.M2, 3.1.0.M2]",
+ org.springframework.core;version="[3.1.0.M2, 3.1.0.M2]",
+ org.springframework.expression;version="[3.1.0.M2, 3.1.0.M2]",
+ org.springframework.jdbc;version="[3.1.0.M2, 3.1.0.M2]",
+ org.springframework.jms;version="[3.1.0.M2, 3.1.0.M2]",
+ org.springframework.orm;version="[3.1.0.M2, 3.1.0.M2]",
+ org.springframework.oxm;version="[3.1.0.M2, 3.1.0.M2]",
+ org.springframework.transaction;version="[3.1.0.M2, 3.1.0.M2]",
+ org.springframework.web;version="[3.1.0.M2, 3.1.0.M2]",
+ org.springframework.web.servlet;version="[3.1.0.M2, 3.1.0.M2]",
+ org.springframework.web.portlet;version="[3.1.0.M2, 3.1.0.M2]",
+ com.springsource.org.aopalliance;version="[1.0.0, 1.0.0]"
