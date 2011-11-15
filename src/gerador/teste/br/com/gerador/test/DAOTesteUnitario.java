@@ -1,3 +1,4 @@
+package br.com.gerador.test;
 //package gerador.teste;
 //
 //import static org.junit.Assert.assertTrue;

@@ -1,4 +1,4 @@
-package gerador.atributo;
+package atributo;
 
 import java.io.FileNotFoundException;
 import java.lang.reflect.Field;
@@ -21,7 +21,6 @@ import enumerador.EnumMapeamento;
 import enumerador.EnumTipoInfoAtributo;
 import enumerador.mapeamento.entidade.EnumEntidadeMptI;
 import exception.MapeamentoException;
-import gerador.DicionarioCarregador;
 
 /**
  * Classe responsavel pela instanciacao e geracao de conteudo teste (aleatorio) para entidades e outros tipos.

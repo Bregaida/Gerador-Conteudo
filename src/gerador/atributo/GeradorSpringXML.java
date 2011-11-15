@@ -1,7 +1,4 @@
-///**
-// * 
-// */
-//package gerador;
+//package atributo;
 //
 //import java.io.BufferedReader;
 //import java.io.BufferedWriter;
@@ -12,8 +9,6 @@
 //import java.io.IOException;
 //import java.io.Reader;
 //import java.lang.reflect.Field;
-//import java.lang.reflect.InvocationTargetException;
-//import java.lang.reflect.ParameterizedType;
 //import java.sql.SQLException;
 //import java.util.Collection;
 //import java.util.HashMap;
@@ -22,11 +17,9 @@
 //import org.apache.commons.beanutils.PropertyUtils;
 //
 //import util.ReflectionUtil;
-//import util.Util;
 //
 //import com.thoughtworks.xstream.XStream;
 //
-//import dicionario.entidade.dao.GrupoEntidadeDAO;
 //import dicionario.entidade.modelo.GrupoEntidadeE;
 //import dicionario.entidade.to.BeanTO;
 //import dicionario.entidade.to.PropertyTO;

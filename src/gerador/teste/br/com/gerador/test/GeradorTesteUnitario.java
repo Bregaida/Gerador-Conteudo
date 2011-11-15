@@ -1,18 +1,19 @@
 /**
  * 
  */
-package gerador.teste;
+package br.com.gerador.test;
 
 import static org.junit.Assert.assertNotNull;
-import entidade.EmpresaE;
-import entidade.EstadoE;
-import gerador.GeradorMapeamento;
-import gerador.atributo.GeradorConteudo;
 
 import java.util.HashSet;
 import java.util.Set;
 
 import org.junit.Test;
+
+import atributo.GeradorConteudo;
+import atributo.GeradorMapeamento;
+import entidade.EmpresaE;
+import entidade.EstadoE;
 
 public class GeradorTesteUnitario
 {

@@ -1,10 +1,10 @@
-package gerador.teste;
-
-import entidade.EstadoE;
-import gerador.atributo.GeradorConteudo;
+package br.com.gerador.test;
 
 import java.util.HashSet;
 import java.util.Set;
+
+import atributo.GeradorConteudo;
+import entidade.EstadoE;
 
 public class GeradorTeste
 {

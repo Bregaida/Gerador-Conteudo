@@ -1,8 +1,8 @@
-package gerador.teste;
+package br.com.gerador.test;
 
 import entidade.EmpresaE;
 import entidade.EstadoE;
-import gerador.entidade.GeradorConteudoConsistente;
+import entidade.GeradorConteudoConsistente;
 
 public class GeradorConsistenteTeste
 {

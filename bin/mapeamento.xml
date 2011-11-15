@@ -1,0 +1,49 @@
+<mapeamento>
+	<entidades>
+		<!-- 
+		Exemplo de mapeamento para nova entidade ou já existente
+		<entidade>
+			<nome>MinhaEntidadeE</nome>
+			<pk>MinhaPk</pk>
+			<entidadePacote>br.com.empresa.corporativo.entity.clazz</entidadePacote>
+			<entidadeMptPacote>enumerador.entidade.corporativo</entidadeMptPacote>
+			<pkPacote>enumerador.entidade.pk.corporativo</pkPacote>
+			<pkMptPacote>enumerador.entidade.pk.corporativo</pkMptPacote>
+			<atributos>
+				<atributo>
+					<nome>atributo1</nome>
+					<alias>aliasDoAtributo1</alias>
+					<informacao>TESTE_ATRIBUTO_NOVO_1</informacao>
+					<tipo>String</tipo>
+				</atributo>
+				<atributo>
+					<nome>atributo2</nome>
+					<alias>aliasDoAtributo2</alias>
+					<informacao>TESTE_ATRIBUTO_NOVO_2</informacao>
+					<tipo>Long</tipo>
+				</atributo>
+			</atributos>
+		</entidade>
+		-->
+	<entidade>
+			<nome>EstadoE</nome>
+			<entidadePacote>entidade</entidadePacote>
+			<entidadeMptPacote>enumerador.mapeamento.entidade</entidadeMptPacote>
+			<atributos>
+				<atributo>
+					<nome>pk</nome>
+					<alias>pkEstado</alias> 
+					<informacao>PK_ESTADO</informacao>
+					<tipo>Long</tipo>
+				</atributo>
+				<atributo>
+					<nome>nome</nome>
+					<alias>nomeEstado</alias> 
+					<informacao>NOME_ESTADO</informacao>
+					<tipo>String</tipo>
+				</atributo>
+			</atributos>
+		</entidade>
+		
+	</entidades>
+</mapeamento> 

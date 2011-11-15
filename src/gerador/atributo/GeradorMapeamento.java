@@ -1,4 +1,4 @@
-package gerador;
+package atributo;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -23,7 +23,7 @@ import enumerador.EnumArquivoNomes;
 import exception.GeradorException;
 
 /**
- * Responsável por gerar e atualizar o conteudo dos arquivos necessarios apos atualizacao 'mapeamento.xml'. Arquivos: - EnumMapeamento.java - AtributosDicionario.java - EnumEntidadeMpt.java (Entidade deve ser o nome da entidade, ex: EnumEmpresaMpt.java) - EnumTipoInfoAtributo.java
+ * Responsavel por gerar e atualizar o conteudo dos arquivos necessarios apos atualizacao 'mapeamento.xml'. Arquivos: - EnumMapeamento.java - AtributosDicionario.java - EnumEntidadeMpt.java (Entidade deve ser o nome da entidade, ex: EnumEmpresaMpt.java) - EnumTipoInfoAtributo.java
  * 
  * @author Fradico e Bregaida
  */
@@ -48,7 +48,7 @@ public class GeradorMapeamento
 		}
 		catch (FileNotFoundException e)
 		{
-			throw new GeradorException("Arquivo não encontrado: " + e.getMessage());
+			throw new GeradorException("Arquivo nao encontrado: " + e.getMessage());
 		}
 	}
 

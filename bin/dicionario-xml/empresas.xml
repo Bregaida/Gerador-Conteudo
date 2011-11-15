@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-2.5.xsd
+		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+		http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+	<bean id="customEditorConfigurer" class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+		<property name="customEditors">
+			<map>
+				<entry key="java.util.Date">
+					<bean class="org.springframework.beans.propertyeditors.CustomDateEditor">
+						<constructor-arg index="0">
+							<bean class="java.text.SimpleDateFormat">
+								<constructor-arg>
+									<value>yyyy-MM-dd</value>
+								</constructor-arg>
+							</bean>
+						</constructor-arg>
+
+						<constructor-arg index="1">
+							<value>true</value>
+						</constructor-arg>
+					</bean>
+				</entry>
+			</map>
+		</property>
+	</bean> 
+  <bean id="empresae0" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="MAX THE DOG COMERCIAL LTDA."/>
+    <property name="descricao" value="MAX THE DOG"/>
+    <property name="dataProcessamentoPagamento" value="1996-02-01"/>
+    <property name="dataProcessamentoAdiantamento" value="2011-11-10"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="0"/>
+  </bean>
+  <bean id="empresae1" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="INTERJOB COMUNICACAO E INFORMAT. LTDA"/>
+    <property name="descricao" value="INTERJOB"/>
+    <property name="dataProcessamentoPagamento" value="2001-04-01"/>
+    <property name="dataProcessamentoAdiantamento" value="2001-06-20"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="1"/>
+  </bean>
+  <bean id="empresae2" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="INTERVEST S/A - C.F.I."/>
+    <property name="descricao" value="INTERVEST"/>
+    <property name="dataProcessamentoPagamento" value="0001-02-01"/>
+    <property name="dataProcessamentoAdiantamento" value="1991-01-01"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="2"/>
+  </bean>
+  <bean id="empresae3" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="VELEIRO VEICULOS LTDA"/>
+    <property name="descricao" value="VELEIRO"/>
+    <property name="dataProcessamentoPagamento" value="0001-02-01"/>
+    <property name="dataProcessamentoAdiantamento" value="1999-03-30"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="3"/>
+  </bean>
+  <bean id="empresae4" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="IND MOVEIS BARTIRA LTDA"/>
+    <property name="descricao" value="BARTIRA"/>
+    <property name="dataProcessamentoPagamento" value="2011-07-01"/>
+    <property name="dataProcessamentoAdiantamento" value="2010-01-20"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="4"/>
+  </bean>
+  <bean id="empresae5" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="DIADEL DISTR.AUTOM.LTDA"/>
+    <property name="descricao" value="DIADEL"/>
+    <property name="dataProcessamentoPagamento" value="2010-09-01"/>
+    <property name="dataProcessamentoAdiantamento" value="2001-06-20"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="5"/>
+  </bean>
+  <bean id="empresae6" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="INTERBENS D.T.V.M. LTDA"/>
+    <property name="descricao" value="INTERBENS DTVM LTDA"/>
+    <property name="dataProcessamentoPagamento" value="0001-02-01"/>
+    <property name="dataProcessamentoAdiantamento" value="1991-01-01"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="6"/>
+  </bean>
+  <bean id="empresae7" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="CONDOMINIO EDIF.VITORIA"/>
+    <property name="descricao" value="CONDOMINIO VITORIA"/>
+    <property name="dataProcessamentoPagamento" value="0001-02-01"/>
+    <property name="dataProcessamentoAdiantamento" value="1991-01-01"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="7"/>
+  </bean>
+  <bean id="empresae8" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="VECON VEICULOS LTDA."/>
+    <property name="descricao" value="VECON"/>
+    <property name="dataProcessamentoPagamento" value="0001-02-01"/>
+    <property name="dataProcessamentoAdiantamento" value="1999-03-30"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="8"/>
+  </bean>
+  <bean id="empresae9" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="VELEIRO IMPORTS LTDA"/>
+    <property name="descricao" value="VELEIRO IMPORTS"/>
+    <property name="dataProcessamentoPagamento" value="0001-02-01"/>
+    <property name="dataProcessamentoAdiantamento" value="1991-01-01"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="9"/>
+  </bean>
+  <bean id="empresae10" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="BAHIA TRUST DE RECEBIVEIS S/A"/>
+    <property name="descricao" value="BAHIA TRUST"/>
+    <property name="dataProcessamentoPagamento" value="0001-02-01"/>
+    <property name="dataProcessamentoAdiantamento" value="1991-01-01"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="10"/>
+  </bean>
+  <bean id="empresae11" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="N.K.STORE IND.COM.CONF.AC.LTDA"/>
+    <property name="descricao" value="N.K.STORE"/>
+    <property name="dataProcessamentoPagamento" value="2007-08-01"/>
+    <property name="dataProcessamentoAdiantamento" value="2007-07-15"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="11"/>
+  </bean>
+  <bean id="empresae12" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="CENTRO E. MARTE AVIONICS LTDA"/>
+    <property name="descricao" value="HANGAR"/>
+    <property name="dataProcessamentoPagamento" value="2011-01-01"/>
+    <property name="dataProcessamentoAdiantamento" value="1991-01-01"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="12"/>
+  </bean>
+  <bean id="empresae13" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="MICHAEL KLEIN"/>
+    <property name="descricao" value="MICHAEL KLEIN"/>
+    <property name="dataProcessamentoPagamento" value="2009-08-01"/>
+    <property name="dataProcessamentoAdiantamento" value="2000-11-15"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="13"/>
+  </bean>
+  <bean id="empresae15" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="BAHIA RECEBIVEIS S.A."/>
+    <property name="descricao" value="BAHIA RECEBIVEIS"/>
+    <property name="dataProcessamentoPagamento" value="0001-02-01"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="15"/>
+  </bean>
+  <bean id="empresae16" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="TALIE IND.COM.EXPORT./IMPORT. CONFECCAO E ACESS.LTDA"/>
+    <property name="descricao" value="TALIE"/>
+    <property name="dataProcessamentoPagamento" value="2007-08-01"/>
+    <property name="dataProcessamentoAdiantamento" value="2007-07-15"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="16"/>
+  </bean>
+  <bean id="empresae17" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="CB PUBLICIDADE E PROPAGANDA LTDA"/>
+    <property name="descricao" value="CB PUBLICIDADE"/>
+    <property name="dataProcessamentoPagamento" value="2008-06-01"/>
+    <property name="dataProcessamentoAdiantamento" value="2010-01-20"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="17"/>
+  </bean>
+  <bean id="empresae18" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="MAP EMPREENDIMENTOS COMERCIAL LTDA-ME"/>
+    <property name="descricao" value="MAP"/>
+    <property name="dataProcessamentoPagamento" value="2006-08-01"/>
+    <property name="dataProcessamentoAdiantamento" value="2006-06-15"/>
+    <property name="status" value="false"/>
+    <property name="pk" value="18"/>
+  </bean>
+  <bean id="empresae19" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="MAX THE DOG CONTACT CENTER LTDA."/>
+    <property name="descricao" value="CB CONTACT CENTER"/>
+    <property name="dataProcessamentoPagamento" value="2006-08-01"/>
+    <property name="dataProcessamentoAdiantamento" value="2006-06-15"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="19"/>
+  </bean>
+  <bean id="empresae20" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="HABILE SEGURANCA E VIGILANCIA LTDA"/>
+    <property name="descricao" value="HABILE"/>
+    <property name="dataProcessamentoPagamento" value="0001-02-01"/>
+    <property name="dataProcessamentoAdiantamento" value="0001-01-01"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="20"/>
+  </bean>
+  <bean id="empresae21" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="GLOBEX UTILIDADES S.A."/>
+    <property name="descricao" value="PONTO FRIO"/>
+    <property name="dataProcessamentoPagamento" value="2011-05-01"/>
+    <property name="dataProcessamentoAdiantamento" value="2006-12-20"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="21"/>
+  </bean>
+  <bean id="empresae22" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="NOVA MAX THE DOG S/A"/>
+    <property name="descricao" value="NOVA MAX THE DOG"/>
+    <property name="dataProcessamentoPagamento" value="2011-07-01"/>
+    <property name="dataProcessamentoAdiantamento" value="2006-12-20"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="22"/>
+  </bean>
+  <bean id="empresae23" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="GLOBEX COMERCIAL S/A"/>
+    <property name="descricao" value="GLOBEX"/>
+    <property name="dataProcessamentoPagamento" value="2007-01-01"/>
+    <property name="dataProcessamentoAdiantamento" value="2006-12-20"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="23"/>
+  </bean>
+  <bean id="empresae24" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="GLOBEX ADMINIST. DE CONSORCIOS LTDA"/>
+    <property name="descricao" value="GLOBEX CONSORCIOS"/>
+    <property name="dataProcessamentoPagamento" value="2011-07-01"/>
+    <property name="dataProcessamentoAdiantamento" value="2011-03-21"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="24"/>
+  </bean>
+  <bean id="empresae25" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="FUNDACAO PONTO FRIO A. JOAO MONTEVERDE"/>
+    <property name="descricao" value="FUNDACAO PONTO FRIO"/>
+    <property name="dataProcessamentoPagamento" value="2011-07-01"/>
+    <property name="dataProcessamentoAdiantamento" value="2011-03-21"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="25"/>
+  </bean>
+  <bean id="empresae41" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="NOVA MAX THE DOG S/A"/>
+    <property name="descricao" value="PONTO FRIO"/>
+    <property name="dataProcessamentoPagamento" value="2011-01-01"/>
+    <property name="dataProcessamentoAdiantamento" value="2006-12-20"/>
+    <property name="status" value="false"/>
+    <property name="pk" value="41"/>
+  </bean>
+  <bean id="empresae77" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="MOURAO MOVEIS LTDA"/>
+    <property name="descricao" value="MOURAO"/>
+    <property name="dataProcessamentoPagamento" value="0001-02-01"/>
+    <property name="dataProcessamentoAdiantamento" value="1991-01-01"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="77"/>
+  </bean>
+  <bean id="empresae79" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="MAX THE DOG COML. LTDA."/>
+    <property name="descricao" value="CASAS BAHIA"/>
+    <property name="dataProcessamentoPagamento" value="2010-09-01"/>
+    <property name="dataProcessamentoAdiantamento" value="2010-01-20"/>
+    <property name="status" value="false"/>
+    <property name="pk" value="79"/>
+  </bean>
+  <bean id="empresae80" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="DISTRIBUIDORA COMERCIAL PAULISTA (DISCOPA)"/>
+    <property name="descricao" value="DISCOPA"/>
+    <property name="dataProcessamentoPagamento" value="0001-02-01"/>
+    <property name="dataProcessamentoAdiantamento" value="1991-01-01"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="80"/>
+  </bean>
+  <bean id="empresae82" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="INTERVEST S/A CREDITO,FINAN.INVEST."/>
+    <property name="descricao" value="INTERVEST S/A"/>
+    <property name="dataProcessamentoPagamento" value="0001-02-01"/>
+    <property name="dataProcessamentoAdiantamento" value="1991-01-01"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="82"/>
+  </bean>
+  <bean id="empresae84" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="MAPAI MAGAZINE LTDA"/>
+    <property name="descricao" value="MAPAI"/>
+    <property name="dataProcessamentoPagamento" value="0001-02-01"/>
+    <property name="dataProcessamentoAdiantamento" value="1991-01-01"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="84"/>
+  </bean>
+  <bean id="empresae86" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="SANEMATSU S/A UMP. E COMERCIO"/>
+    <property name="descricao" value="SANEMATSU"/>
+    <property name="dataProcessamentoPagamento" value="0001-02-01"/>
+    <property name="dataProcessamentoAdiantamento" value="1991-01-01"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="86"/>
+  </bean>
+  <bean id="empresae87" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="CINE SYMAFLOR LTDA"/>
+    <property name="descricao" value="CINE SYMAFLOR"/>
+    <property name="dataProcessamentoPagamento" value="0001-02-01"/>
+    <property name="dataProcessamentoAdiantamento" value="1991-01-01"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="87"/>
+  </bean>
+  <bean id="empresae88" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="MAX THE DOG COML. LTDA"/>
+    <property name="descricao" value="C.B. 88"/>
+    <property name="dataProcessamentoPagamento" value="0001-02-01"/>
+    <property name="dataProcessamentoAdiantamento" value="1991-01-01"/>
+    <property name="status" value="false"/>
+    <property name="pk" value="88"/>
+  </bean>
+  <bean id="empresae90" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="SO DINHEIRO COM. DE CONF. LTDA"/>
+    <property name="descricao" value="SO DINHEIRO"/>
+    <property name="dataProcessamentoPagamento" value="0001-02-01"/>
+    <property name="dataProcessamentoAdiantamento" value="1991-01-01"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="90"/>
+  </bean>
+  <bean id="empresae92" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="MAX THE DOG S/A INDUSTRIA E COMERCIO"/>
+    <property name="descricao" value="MAX THE DOG S/A"/>
+    <property name="dataProcessamentoPagamento" value="0001-02-01"/>
+    <property name="dataProcessamentoAdiantamento" value="1991-01-01"/>
+    <property name="status" value="false"/>
+    <property name="pk" value="92"/>
+  </bean>
+  <bean id="empresae93" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="LOJAS TAMAKAVY LTDA"/>
+    <property name="descricao" value="LOJAS TAMAKAVY"/>
+    <property name="dataProcessamentoPagamento" value="0001-02-01"/>
+    <property name="dataProcessamentoAdiantamento" value="1991-01-01"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="93"/>
+  </bean>
+  <bean id="empresae94" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="DOMUS UTILIDADES DOMESTICAS SA"/>
+    <property name="descricao" value="DOMUS"/>
+    <property name="dataProcessamentoPagamento" value="0001-02-01"/>
+    <property name="dataProcessamentoAdiantamento" value="1991-01-01"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="94"/>
+  </bean>
+  <bean id="empresae95" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="CASA GARSON APARELHOS ELET. S/A"/>
+    <property name="descricao" value="CASA GARSON"/>
+    <property name="dataProcessamentoPagamento" value="0001-02-01"/>
+    <property name="dataProcessamentoAdiantamento" value="1991-01-01"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="95"/>
+  </bean>
+  <bean id="empresae96" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="GARSON PUBLICIDADE S.A."/>
+    <property name="descricao" value="GARSON PUBLICIDADE"/>
+    <property name="dataProcessamentoPagamento" value="0001-02-01"/>
+    <property name="dataProcessamentoAdiantamento" value="1991-01-01"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="96"/>
+  </bean>
+  <bean id="empresae97" class="br.com.meuProjeto.entity.clazz.EmpresaE">
+    <property name="razaoSocial" value="MODELAR S/A COM. E IMPORTACAO"/>
+    <property name="descricao" value="MODELAR"/>
+    <property name="dataProcessamentoPagamento" value="0001-02-01"/>
+    <property name="dataProcessamentoAdiantamento" value="1991-01-01"/>
+    <property name="status" value="true"/>
+    <property name="pk" value="97"/>
+  </bean>
+</beans>

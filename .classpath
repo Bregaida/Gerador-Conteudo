@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="dicionario/entidade/dao/|gerador/teste/|gerador/" kind="src" path="src"/>
+	<classpathentry kind="src" path="src/dicionario/entidade/dao"/>
+	<classpathentry excluding="teste/" kind="src" path="src/gerador"/>
+	<classpathentry kind="src" path="src/gerador/teste"/>
+	<classpathentry kind="lib" path="lib/asm.jar"/>
+	<classpathentry kind="lib" path="lib/cglib.jar"/>
+	<classpathentry kind="lib" path="lib/cicseci.jar"/>
+	<classpathentry kind="lib" path="lib/cicsecitools.jar"/>
+	<classpathentry kind="lib" path="lib/cicsframe.jar"/>
+	<classpathentry kind="lib" path="lib/cnAutenticacaoAdapter.jar"/>
+	<classpathentry kind="lib" path="lib/commons-beanutils-1.7.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/ctgclient.jar"/>
+	<classpathentry kind="lib" path="lib/ctgserver.jar"/>
+	<classpathentry kind="lib" path="lib/junit-4.9b1-src.jar"/>
+	<classpathentry kind="lib" path="lib/junit-4.9b1.jar"/>
+	<classpathentry kind="lib" path="lib/junit-dep-4.9b1.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.aop-3.1.0.M2.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.asm-3.1.0.M2.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.aspects-3.1.0.M2.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.beans-3.1.0.M2.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.context-3.1.0.M2.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.context.support-3.1.0.M2.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.core-3.1.0.M2.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.expression-3.1.0.M2.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.instrument-3.1.0.M2.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.oxm-3.1.0.M2.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.test-3.1.0.M2.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.transaction-3.1.0.M2.jar"/>
+	<classpathentry kind="lib" path="lib/xstream-1.3.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/hibernate-annotations-3.4.0.GA.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate-commons-annotations-3.1.0.GA.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate-core-3.3.2.GA.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate-entitymanager-3.4.0.GA.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate-validator-3.1.0.GA.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

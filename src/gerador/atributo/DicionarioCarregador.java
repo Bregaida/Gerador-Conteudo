@@ -1,4 +1,5 @@
-package gerador;
+package atributo;
+
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -14,6 +15,8 @@ import java.util.Map;
 import org.apache.commons.beanutils.PropertyUtils;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import util.Util;
 
 import anotacao.DicionarioAnotacao;
 
@@ -47,7 +50,7 @@ public class DicionarioCarregador
 		/* O mapa guarda listas de valores de atributos. Uma lista para cada tipo de informacao (EnumTipoInfoAtributo). */
 		Map<EnumTipoInfoAtributo, List<?>>	tipoInfoEConteudoMap				= new HashMap<EnumTipoInfoAtributo, List<?>>();
 		
-		File fileInput = new File(EnumArquivoNomes.DICIONARIO_ATRIBUTOS.getNome());
+		File fileInput = new File(Util.caminhoArquivo(EnumArquivoNomes.DICIONARIO_ATRIBUTOS.getNome()));
 		BufferedReader readerXML = new BufferedReader(new FileReader(fileInput));
 		XStream xstream = new XStream(new DomDriver());
 		xstream.alias("dicionario", ListaAtributosDicionarioXml.class);

@@ -1,3 +1,4 @@
+package br.com.gerador.test;
 ///**
 // * 
 // */

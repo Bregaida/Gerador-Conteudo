@@ -43,7 +43,7 @@ public class GrdEnumTipoInfoAtributo
 	 */
 	public String gerar() throws IOException
 	{
-		File arquivo = new File(caminhoArquivo);
+		File arquivo = new File(Util.caminhoArquivo(caminhoArquivo));
 
 		BufferedReader reader = new BufferedReader(new FileReader(arquivo));
 		char[] conteudoChars = new char[(int) arquivo.length()];

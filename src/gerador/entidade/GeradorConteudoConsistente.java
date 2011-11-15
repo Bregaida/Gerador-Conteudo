@@ -1,4 +1,4 @@
-package gerador.entidade;
+package entidade;
 
 import java.io.FileNotFoundException;
 import java.lang.reflect.InvocationTargetException;
@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
+import atributo.DicionarioCarregador;
 import exception.MapeamentoException;
-import gerador.DicionarioCarregador;
 
 public class GeradorConteudoConsistente
 {
