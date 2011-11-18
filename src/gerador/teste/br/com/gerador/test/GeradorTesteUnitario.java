@@ -12,8 +12,7 @@ import org.junit.Test;
 
 import atributo.GeradorConteudo;
 import atributo.GeradorMapeamento;
-import entidade.EmpresaE;
-import entidade.EstadoE;
+import entidade.Funcionario;
 
 public class GeradorTesteUnitario
 {
@@ -23,17 +22,11 @@ public class GeradorTesteUnitario
 	Set<?> entidades = new HashSet();
 	
 	@Test
-	public void deveriaGerarDadosEmpresa() throws Exception {
+	public void deveriaGerarDadosFuncionario() throws Exception {
 		mapeamento = new GeradorMapeamento();
 		mapeamento.gerar();
 		gerador = new GeradorConteudo();
-		assertNotNull((EmpresaE) gerador.obterInstanciaPopulada(EmpresaE.class, entidades));
-	}
-
-	@Test
-	public void deveriaGerarDadosEstado() throws Exception {
-		gerador = new GeradorConteudo();
-		assertNotNull((EstadoE) gerador.obterInstanciaPopulada(EstadoE.class, entidades));
+		assertNotNull((Funcionario) gerador.obterInstanciaPopulada(Funcionario.class, entidades));
 	}
 
 }

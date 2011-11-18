@@ -38,5 +38,19 @@
 	<classpathentry kind="lib" path="lib/hibernate-core-3.3.2.GA.jar"/>
 	<classpathentry kind="lib" path="lib/hibernate-entitymanager-3.4.0.GA.jar"/>
 	<classpathentry kind="lib" path="lib/hibernate-validator-3.1.0.GA.jar"/>
+	<classpathentry kind="lib" path="lib/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="lib/c3p0-0.9.1.jar"/>
+	<classpathentry kind="lib" path="lib/classmate-0.5.4.jar"/>
+	<classpathentry kind="lib" path="lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate-c3p0-4.0.0.CR6.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate-commons-annotations-4.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate-core-4.0.0.CR6.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate-entitymanager-4.0.0.CR6.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="lib/jandex-1.0.3.Final.jar"/>
+	<classpathentry kind="lib" path="lib/javassist-3.12.1.GA.jar"/>
+	<classpathentry kind="lib" path="lib/jboss-logging-3.1.0.CR1.jar"/>
+	<classpathentry kind="lib" path="lib/jboss-transaction-api_1.1_spec-1.0.0.Final.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

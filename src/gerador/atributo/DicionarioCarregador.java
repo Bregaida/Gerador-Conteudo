@@ -98,9 +98,7 @@ public class DicionarioCarregador
 	{
 		Map<Class, List> entidadesConsistentesEConteudoMap = new HashMap<Class, List>();
 		
-		entidadesConsistentesEConteudoMap = carregarConteudoParaEntidade(EnumEntidadeConstante.ESTADO, entidadesConsistentesEConteudoMap);
-
-		entidadesConsistentesEConteudoMap = carregarConteudoParaEntidade(EnumEntidadeConstante.EMPRESA, entidadesConsistentesEConteudoMap);
+		entidadesConsistentesEConteudoMap = carregarConteudoParaEntidade(EnumEntidadeConstante.FUNCIONARIO, entidadesConsistentesEConteudoMap);
 		
 		return entidadesConsistentesEConteudoMap;
 	}

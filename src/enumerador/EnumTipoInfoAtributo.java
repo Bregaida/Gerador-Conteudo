@@ -26,7 +26,8 @@ public enum EnumTipoInfoAtributo
 	NOME_SHOPPING(14, String.class),
 	TIPO_ATIVIDADE(15, String.class),
 	NOME_MUNICIPIO(16, String.class),
-	NOME_ESTADO(0, String.class),
+	NOME_ESTADO(17, String.class),
+	EMAIL(18, String.class),
 	;
 	/* FIM DAS DECLARACOES */
 	

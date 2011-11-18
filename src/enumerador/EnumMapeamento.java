@@ -3,11 +3,9 @@ package enumerador;
 import java.lang.reflect.Field;
 
 import util.ReflectionUtil;
-import entidade.EmpresaE;
-import entidade.EstadoE;
-import enumerador.mapeamento.entidade.EnumEmpresaMpt;
+import entidade.Funcionario;
 import enumerador.mapeamento.entidade.EnumEntidadeMptI;
-import enumerador.mapeamento.entidade.EnumEstadoMpt;
+import enumerador.mapeamento.entidade.EnumFuncionarioMpt;
 import exception.MapeamentoException;
 
 
@@ -20,8 +18,7 @@ public enum EnumMapeamento
 {
 
 	/*Entidades do Projeto Corporativo*/
-	EMPRESA(EmpresaE.class, EnumEmpresaMpt.values()),
-	ESTADO(EstadoE.class, EnumEstadoMpt.values()),
+	FUNCIONARIO(Funcionario.class, EnumFuncionarioMpt.values()),
 	;
 	/* FIM ENTIDADE */
 	

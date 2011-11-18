@@ -1,13 +1,11 @@
 package enumerador;
 
-import entidade.EmpresaE;
-import entidade.EstadoE;
+import entidade.Funcionario;
 
 public enum EnumEntidadeConstante
 {
 	//se usar o caminho/path, usar classloader. Senao, usar apenas o nome do arquivo.
-	EMPRESA(EmpresaE.class, "empresas.xml"),
-	ESTADO(EstadoE.class, "estados.xml");
+	FUNCIONARIO(Funcionario.class, "empresas.xml");
 	
 	private Class klass;
 	private String nomeArqXml;
